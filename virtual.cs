@@ -27,8 +27,10 @@ namespace virtualreality
                 Pen a = new Pen(Color.FromArgb(0, 0, 0));
                 Pen c = new Pen(Color.FromArgb(255, 255, 255));
                 ee.Clear(Color.FromArgb(0, 0, 255));
-                ee.DrawLine(a, e.X, 0, e.X, pictureBox1.Height);
-                ee.DrawLine(a, 0, e.Y, pictureBox1.Width, e.Y);
+                ee.DrawLine(a, 0, e.Y,pictureBox1.Width, e.Y );
+                ee.DrawLine(a, 0, pictureBox1.Height, e.X, e.Y);
+                ee.DrawLine(a, pictureBox1.Width, pictureBox1.Height, e.X, e.Y);
+
                 a.Dispose();
                 c.Dispose();
                 ee.Dispose();
