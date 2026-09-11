@@ -26,7 +26,7 @@ namespace virtualreality
                 ee = Graphics.FromImage(b);
                 Pen a = new Pen(Color.FromArgb(0, 0, 0));
                 Pen c = new Pen(Color.FromArgb(255, 255, 255));
-                ee.Clear(Color.FromArgb(0, 0, 255));
+                ee.Clear(Color.FromArgb(255, 255, 255));
                 ee.DrawLine(a, 0, e.Y,pictureBox1.Width, e.Y );
                 ee.DrawLine(a, 0, pictureBox1.Height, e.X, e.Y);
                 ee.DrawLine(a, pictureBox1.Width, pictureBox1.Height, e.X, e.Y);
@@ -91,7 +91,7 @@ namespace virtualreality
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Blue;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Location = new System.Drawing.Point(0, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(799, 454);
@@ -103,7 +103,7 @@ namespace virtualreality
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
